@@ -1,0 +1,32 @@
+body {
+  width:100%;
+  height:100%;
+  font-family:Abel;
+}
+
+.container {
+  text-align:center;
+}
+
+
+h1 {
+  display:none;
+  font-size:76px;
+  padding:10px;
+  padding-bottom:0px;
+  margin-top:50px;
+  margin-bottom:0px;
+  border-bottom:1px solid black;
+}
+
+h2 {
+  margin:0px;
+}
+
+h2, #subtitle {
+  display:none;
+}
+
+div .inner-container {
+  display:none;
+}

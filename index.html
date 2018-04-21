@@ -21,37 +21,67 @@
 
 
 
-    <div class="container">
+    <div class="container"><div class="d-none">asasass</div>
       <div class="innerContainer">
-        <h1 id="title">CARLESGOMALB.COM</h1>
-        <h2 id="subtitle">Welcome to my website!</h2>
+        <div class="d-none d-sm-block"><h1 id="title">CARLESGOMALB.COM</h1></div>
+        <div class="d-block d-sm-none"><h2 id="title-xs">CARLESGOMALB.COM</h2></div>
+        <h3 id="subtitle">Welcome to my website!</h3>
+
+
 
         <div class="inner-container">
 
           <div class="row">
             <div class="col-md-4">
               <ul class="list-group" style="padding:10px;">
-                <li class="list-group-item active"><b>ABOUT ME</b></li>
-                <li class="list-group-item">Name <b>Carles Gómez Alberola</b></li>
-                <li class="list-group-item">Date of birth <b>06/09/1992</b></li>
-                <li class="list-group-item">Location <b>Barcelona, Spain</b></li>
-                <li class="list-group-item">Contact <b>carlesgomalb@hotmail.es</b></li>
+                <li class="list-group-item active"><b>SOBRE MI</b></li>
+                <li class="list-group-item">Nombre <b>Carles Gómez Alberola</b></li>
+                <li class="list-group-item">Fecha de nacimiento <b>06/09/1992</b></li>
+                <li class="list-group-item">Residencia <b>Barcelona, Spain</b></li>
+                <li class="list-group-item">Contacto <b>carlesgomalb@hotmail.es</b></li>
               </ul>
             </div>
+
             <div class="col-md-4">
               <ul class="list-group" style="padding:10px;">
-                <li class="list-group-item active"><b>MY JOBS</b></li>
+                <li class="list-group-item active"><b>MI EXPERIENCIA</b></li>
                 <li class="list-group-item">
-                  <b>Inteccno ME Systems / Otsuka Pharmaceutical S.A.</b> 5 YEARS
-                  <p>System administrator (Windows Server)</p>
-                  <p>Helpdesk/Induction to users</p>
-                  <p>Fullstack PHP developer with laravel framework</p>
+                  <b>Inteccno / Otsuka Pharmaceutical S.A.</b>
+                  <p>Administrador de sistemas (Windows Server)</p>
+                  <p>Helpdesk/Formación a usuarios</p>
+                  <p>Programador Fullstack PHP + laravel</p>
+                  <p class="job-year">5 años</p>
+                </li>
+                <li id="telepizza" class="list-group-item job-no-show">
+                  <b>Telepizza S.A.</b>
+                  <p class="telepizza">Repartidor a domicilio</p>
+                  <p class="telepizza job-year">1 año</p>
+                </li>
+                <li id="pedagogia" class="list-group-item job-no-show">
+                  <b>Pedagogia Interactiva S.L.</b>
+                  <p class="pedagogia">Becario informática</p>
+                  <p class="pedagogia">Actualizar y realizar cambios en base de datos</p>
+                  <p class="pedagogia">Edición de plantillas escolares</p>
+                  <p class="pedagogia job-year">1 año</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-4">
+              <ul class="list-group" style="padding:10px;">
+                <li class="list-group-item active"><b>MIS LOGROS</b></li>
+                <li class="list-group-item">
+                  <b>iOS</b>
+                  <p> Aplicación para el registro de visitas en la oficina. </p>
+                  <p class="job-year"> Swift </p>
+                  <p class="job-year"> Otsuka Pharmaceutical S.A. </p>
                 </li>
                 <li class="list-group-item">
-                  <b>Inteccno ME Systems</b>
-                  <p>System administrator (Windows Server)</p>
-                  <p>Helpdesk/Induction to users</p>
-                  <p>Fullstack PHP developer with laravel framework</p>
+                  <b>Android</b>
+                  <p> Aplicación para guardar y organizar en álbumes, todas las fotos en la nube. </p>
+                  <p> API REST para obtener o publicar fotos en la base de datos </p>
+                  <p class="job-year"> Android Studio + MongoDB </p>
+                  <p class="job-year"> Monlau Centro de Estudios </p>
                 </li>
               </ul>
             </div>
@@ -71,10 +101,19 @@
 
 
     $(document).ready(function(){
-      $("#title").slideDown(1000).ready(function(){
-        $("#subtitle").delay(600).slideDown(1000).delay(1000).slideUp(1000);
+      $("#title, #title-xs").slideDown(1000).ready(function(){
+        $("#subtitle, #subtitle-xs").delay(600).slideDown(1000).delay(1000).slideUp(1000);
         $(".inner-container").delay(3600).slideDown(1000);
       });
+    });
+
+    $('.job-no-show').click(function(){
+      var idn = $(this).attr('id');
+      if($('.'+idn).is(':visible')){
+        $('.'+idn).slideUp(500);
+      }else{
+        $('.'+idn).slideDown(500);
+      }
     });
 
   </script>

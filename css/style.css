@@ -19,14 +19,39 @@ h1 {
   border-bottom:1px solid black;
 }
 
+h2, #title-xs {
+  font-size:38px;
+  display:none;
+  padding:10px;
+  padding-bottom:0px;
+  margin-top:10px;
+  margin-bottom:0px;
+  border-bottom:1px solid black;
+}
+
 h2 {
   margin:0px;
 }
 
-h2, #subtitle {
+h3, #subtitle {
   display:none;
 }
 
 div .inner-container {
   display:none;
+}
+
+.job-no-show {
+  cursor:pointer;
+}
+
+.job-no-show p {
+  display:none;
+}
+
+.job-year {
+  font-size:12px;
+  color:#4B515D;
+  padding:0px;
+  margin:0px;
 }

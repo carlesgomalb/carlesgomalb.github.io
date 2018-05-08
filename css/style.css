@@ -9,24 +9,24 @@ body {
 }
 
 
-h1 {
+#title {
   display:none;
   font-size:76px;
   padding:10px;
   padding-bottom:0px;
   margin-top:50px;
   margin-bottom:0px;
-  border-bottom:1px solid black;
+  border-bottom:10px solid #4285F4;
 }
 
-h2, #title-xs {
+#title-xs {
   font-size:38px;
   display:none;
   padding:10px;
   padding-bottom:0px;
   margin-top:10px;
   margin-bottom:0px;
-  border-bottom:1px solid black;
+  border-bottom:6px solid #4285F4;
 }
 
 h2 {

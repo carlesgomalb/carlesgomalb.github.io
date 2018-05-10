@@ -56,7 +56,7 @@ div .inner-container {
   margin:0px;
 }
 
-.mini-img {
-  width:30%;
-  height:30%;
+.card-img-top {
+  height:50px;
+  object-fit: contain;
 }

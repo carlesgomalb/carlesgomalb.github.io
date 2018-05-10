@@ -99,32 +99,39 @@
                 <div class="list-group-item">
                   <div class="row">
 
-                  <div class="col-md-4">
-                    <p><img src="https://pineco.de/wp-content/uploads/2017/05/laravel-cover-image-1.png" class="mini-img"></p>
-                    <b>Laravel</b>
+                  <div class="col-md-12">
+                    <div class="card-columns">
+                      <div class="card">
+                        <img class="card-img-top" src="https://pineco.de/wp-content/uploads/2017/05/laravel-cover-image-1.png" alt="Card image cap">
+                        <div class="card-body">
+                          <a href="#" data-toggle="popover" data-content="test"><b> Dispositivos </b></a>
 
-                    <p> Dispositivos </p>
-                    <p class="job-year"> PHP + SQL Server </p>
-                    <p class="job-year"> Otsuka Pharmaceutical S.A. </p>
-                  </div>
+                          <p> Aplicación web para la gestión de dispositivos en la compañía. </p>
+                          <p class="job-year"> PHP + SQL Server </p>
+                          <p class="job-year"> Otsuka Pharmaceutical S.A. </p>
+                        </div>
+                      </div>
 
-                  <div class="col-md-4">
-                    <p><img src="https://www.apple.com/la/ios/images/og.png?201804250730" class="mini-img"></p>
-                    <b>iOS</b>
+                      <div class="card">
+                        <img class="card-img-top" src="https://www.apple.com/la/ios/images/og.png?201804250730" alt="Card image cap">
+                        <div class="card-body">
+                          <a href="#" data-toggle="popover" data-content="test"><b>iOS</b></a>
+                          <p> Aplicación para el registro de visitas en la oficina. </p>
+                          <p class="job-year"> Swift </p>
+                          <p class="job-year"> Otsuka Pharmaceutical S.A. </p>
+                        </div>
+                      </div>
 
-                    <p> Aplicación para el registro de visitas en la oficina. </p>
-                    <p class="job-year"> Swift </p>
-                    <p class="job-year"> Otsuka Pharmaceutical S.A. </p>
-                  </div>
-
-                  <div class="col-md-4">
-                    <p><img src="https://androidzone.org/wp-content/uploads/2012/11/logo-android2-720x540.jpg" class="mini-img"></p>
-                    <b>Android</b>
-                    <p> Aplicación para guardar y organizar en álbumes, todas las fotos en la nube. </p>
-                    <p> API REST para obtener o publicar fotos en la base de datos </p>
-                    <p class="job-year"> Android Studio + MongoDB </p>
-                    <p class="job-year"> Monlau Centro de Estudios </p>
-                  </div>
+                      <div class="card">
+                        <img class="card-img-top" src="https://androidzone.org/wp-content/uploads/2012/11/logo-android2-720x540.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <a href="#" data-toggle="popover" data-content="test"><b>Android</b></a>
+                          <p> Aplicación para guardar y organizar en álbumes, todas las fotos en la nube. </p>
+                          <p> API REST para obtener o publicar fotos en la base de datos </p>
+                          <p class="job-year"> Android Studio + MongoDB </p>
+                          <p class="job-year"> Monlau Centro de Estudios </p>
+                        </div>
+                      </div>
 
                   </div>
                 </div>
@@ -155,6 +162,8 @@
           "border-bottom-width": "2px"
         }, 600);
       });
+
+      $('[data-toggle="popover"]').popover();
     });
 
     $('.job-no-show').click(function(){

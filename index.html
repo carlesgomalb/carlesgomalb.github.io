@@ -16,6 +16,8 @@
 
     <link href="css/style.css" rel="stylesheet">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.css" rel="stylesheet">
+
   </head>
   <body>
 
@@ -53,12 +55,12 @@
                   <p class="job-year">5 años</p>
                 </li>
                 <li id="telepizza" class="list-group-item job-no-show">
-                  <b>Telepizza S.A.</b>
+                  <b>Telepizza S.A.</b> <span class="oi text-primary" data-glyph="chevron-bottom"></span>
                   <p class="telepizza">Repartidor a domicilio</p>
                   <p class="telepizza job-year">1 año</p>
                 </li>
                 <li id="pedagogia" class="list-group-item job-no-show">
-                  <b>Pedagogia Interactiva S.L.</b>
+                  <b>Pedagogia Interactiva S.L.</b> <span class="oi text-primary" data-glyph="chevron-bottom"></span>
                   <p class="pedagogia">Becario informática</p>
                   <p class="pedagogia">Actualizar y realizar cambios en base de datos</p>
                   <p class="pedagogia">Edición de plantillas escolares</p>
@@ -107,18 +109,18 @@
                           <a href="#" data-toggle="popover" data-content="test"><b> GESTIÓN DE DISPOSITIVOS </b></a>
 
                           <p> Aplicación web para la gestión de dispositivos en la compañía. </p>
-                          <p class="job-year"> PHP + SQL Server </p>
+                          <p class="job-year"> Laravel + SQL Server </p>
                           <p class="job-year"> Otsuka Pharmaceutical S.A. </p>
                         </div>
                       </div>
 
                       <div class="card">
-                        <img class="card-img-top" src="https://pineco.de/wp-content/uploads/2017/05/laravel-cover-image-1.png" alt="Card image cap">
+                        <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" alt="Card image cap">
                         <div class="card-body">
                           <a href="#" data-toggle="popover" data-content="test"><b> MATERIAL PROMOCIONAL </b></a>
 
                           <p> Aplicación web para la gestión y aprobación de materiales promocionales de la compañía. Contiene circuito de aprobación por grupos de usuario. </p>
-                          <p class="job-year"> PHP + SQL Server </p>
+                          <p class="job-year"> PHP + Bootstrap + SQL Server </p>
                           <p class="job-year"> Otsuka Pharmaceutical S.A. </p>
                         </div>
                       </div>
@@ -129,7 +131,7 @@
                           <a href="#" data-toggle="popover" data-content="test"><b> GESTIÓN DE PROVEEDORES </b></a>
 
                           <p> Aplicación web para la gestión de proveedores de la compañía. Posibilidad de extraer los nuevos proveedores para la importación a SAP. </p>
-                          <p class="job-year"> PHP + SQL Server </p>
+                          <p class="job-year"> Laravel + SQL Server </p>
                           <p class="job-year"> Otsuka Pharmaceutical S.A. </p>
                         </div>
                       </div>
@@ -140,17 +142,17 @@
                           <a href="#" data-toggle="popover" data-content="test"><b> PETICIÓN DE VIAJES </b></a>
 
                           <p> Aplicación web para la petición de viajes/hoteles para el personal interno de la compañía. </p>
-                          <p class="job-year"> PHP + SQL Server </p>
+                          <p class="job-year"> Laravel + SQL Server </p>
                           <p class="job-year"> Otsuka Pharmaceutical S.A. </p>
                         </div>
                       </div>
 
                       <div class="card">
-                        <img class="card-img-top" src="https://pineco.de/wp-content/uploads/2017/05/laravel-cover-image-1.png" alt="Card image cap">
+                        <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" alt="Card image cap">
                         <div class="card-body">
                           <a href="#" data-toggle="popover" data-content="test"><b>PLATAFORMA DE PROYECTOS</b></a>
                           <p> Aplicación web para la propuesta de proyectos. Posibilidad de comentar, rating, likes. </p>
-                          <p class="job-year"> PHP + SQL Server </p>
+                          <p class="job-year"> PHP + Bootstrap + SQL Server </p>
                           <p class="job-year"> Otsuka Pharmaceutical S.A. </p>
                         </div>
                       </div>
@@ -213,8 +215,10 @@
       var idn = $(this).attr('id');
       if($('.'+idn).is(':visible')){
         $('.'+idn).slideUp(500);
+        $('#'+idn+' span').attr("data-glyph", "chevron-bottom");
       }else{
         $('.'+idn).slideDown(500);
+        $('#'+idn+' span').attr("data-glyph", "chevron-top");
       }
     });
 

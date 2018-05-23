@@ -222,6 +222,16 @@
       }
     });
 
+    $('.card').hover(function(){
+      $(this).animate({
+        borderWidth: "+=1px",
+      }, 200);
+    }, function(){
+      $(this).animate({
+        borderWidth: "-=1px",
+      }, 200);
+    });
+
   </script>
 </body>
 </html>

@@ -69,3 +69,13 @@ div .inner-container {
   margin-top:10px;
   object-fit: contain;
 }
+
+li.list-group-item span.go-right,
+div.list-group-item span.go-right {
+  float: right;
+}
+
+li.list-group-item span.go-left,
+div.list-group-item span.go-left {
+  float:left;
+}
